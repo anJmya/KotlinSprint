@@ -9,11 +9,11 @@ fun main() {
 
     // общая зп постоянных сотрудников
     val employeeSalarySum = salary * employeeCount
-    println(employeeSalarySum)
+    println(employeeSalarySum.toInt())
 
     // затраты на зарплаты всем
     val totalSalaryExpense = internSalary * internCount + employeeSalarySum
-    println(totalSalaryExpense)
+    println(totalSalaryExpense.toInt())
 
     // средняя зп в компании
     val averageSalaryPerPerson = totalSalaryExpense / (internCount + employeeCount)
