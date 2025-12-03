@@ -8,14 +8,9 @@ fun main() {
     val rate = 16.7
     val years = 20
 
-    val result = compounding(initialAmount.toDouble(),rate,years)
-    println("%.3f".format(result))
-}
-
-fun compounding(base: Double, rate: Double, years: Int,): Double {
-    // S = P ⋅ (1 + r/n) ^ n ⋅ t
     val rateDecimal = rate / 100
-    val finalAmount = base * (1 + rateDecimal / FREQUENCY).pow(FREQUENCY * years)
+    val finalAmount = initialAmount * (1 + rateDecimal / FREQUENCY).pow(FREQUENCY * years)
+    val result = finalAmount.toDouble()
 
-    return finalAmount
+    println("%.3f".format(result))
 }
