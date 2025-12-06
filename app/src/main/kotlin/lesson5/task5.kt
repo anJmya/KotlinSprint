@@ -11,7 +11,7 @@ fun main() {
         List(REQUIRED_NUMBERS) {
             Random.nextInt(LOWER_BOUND, UPPER_BOUND)
         }
-    println(randomNumber)
+    // println(randomNumber)
 
     print("Введите вашу первую догадку: ")
     val userNumber1 = readln().toInt()
